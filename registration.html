@@ -5,28 +5,29 @@
 		registration
 	</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div class="container">
-	<h1 class="text-center">Register Yourself</h1>
+	<h1 class="text-center heading">Register Yourself</h1>
 	<form>
-	<div class="row justify-content-md-center">	
-		<div class="col-md-8">
+	<div class="row justify-content-center">	
+		<div class="col-md-8 form">
 	  <div class="form-row">
 	    <div class="form-group col-md-6">
-	      <label for="student_no.">Student No.</label>
-	      <input type="number" class="form-control" id="student_no." placeholder="Enter Student No.">
+	      <label for="student_no.">Student No.:</label>
+	      <input type="text" class="form-control" id="student_no." placeholder="Enter Student No.">
 	    </div>
 	    <div class="form-group col-md-6">
-	      <label for="name">Name</label>
+	      <label for="name">Name:</label>
 	      <input type="text" class="form-control" id="name" placeholder="Enter Name">
 	    </div>
 	  </div>
 	  <div class="form-row">
 	    
 	    <div class="form-group col-md-6">
-	      <label for="number">Year</label>
-	      <select id="number" class="form-control">
+	      <label for="year">Year:</label>
+	      <select id="year" class="form-control">
 	        <option selected>1</option>
 	        <option>2</option>
 	        <option>3</option>
@@ -34,7 +35,7 @@
 	      </select>
 	    </div>
 	    <div class="form-group col-md-6">
-	      <label for="blood-group">Blood Group</label>
+	      <label for="blood-group">Blood Group:</label>
 	      <select id="blood-group" class="form-control">
 	        <option selected>A+</option>
 	        <option>A-</option>
@@ -49,6 +50,33 @@
 	    </div>
 	  </div>
 	  <div class="form-row">
+	    
+	    <div class="form-group col-md-6">
+	      <label for="Course">Course:</label>
+	      <select id="Course" class="form-control">
+	        <option selected>B.Tech</option>
+	        <option>M.Tech</option>
+	        <option>MBA</option>
+	        <option>MCA</option>
+	      </select>
+	    </div>
+	    <div class="form-group col-md-6">
+	      <label for="branch">Branch:</label>
+	      <select id="branch" class="form-control">
+	        <option selected>CSE</option>
+	        <option>IT</option>
+	        <option>ECE</option>
+	        <option>EI</option>
+	        <option>EN</option>
+	        <option>ME</option>
+	        <option>CIVIL</option>
+	        <option>MCA</option>
+	      </select>
+	    </div>
+	  </div>
+	  <div class="form-row">
+	  	<div class="form-group">
+	  		<label class="col-md-3">Gender:</label>
 	    <div class="form-check form-check-inline col-md-3">
 			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
 			  <label class="form-check-label" for="male">Male</label>
@@ -57,6 +85,7 @@
 			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
 			  <label class="form-check-label" for="female">Female</label>
 		</div>
+	</div>
 	  </div>
 	  <div class="form-row">
 	  	<div class="form-group col-md-6">
@@ -64,8 +93,8 @@
 	  		<input id="email" type="email" placeholder="Enter Email" class="form-control">
 	  	</div>
 	  	<div class="form-group col-md-6">
-	  		<label for="contact_number" >Contact No.</label> 
-	  		<input id="contact_number" type="number" placeholder="Enter contact no" class="form-control">
+	  		<label for="contact_number" >Contact No.:</label> 
+	  		<input id="contact_number" type="tel" placeholder="Enter contact no" class="form-control">
 	  	</div>
 	  </div>
 	  <div class="form-row">
@@ -78,7 +107,9 @@
 			  <label class="form-check-label" for="day_scholar">Day Scholar</label>
 		</div>
 	  </div>
-	  <button type="submit" class="btn btn-primary">Register</button>
+	  <div class="form-row justify-content-center">
+	  <button type="submit" class="btn btn-primary col-md-4">Register</button>
+	</div>
    </div>	
    </form>
 </div>

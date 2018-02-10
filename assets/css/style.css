@@ -1,0 +1,30 @@
+body{
+	background-color: #141414;
+	color:#f70e0e;
+}
+.container{
+	margin-top: 30px;
+}
+.text-center{
+	padding: 10px;
+}
+.btn{
+	margin-top: 30px;
+}
+.form {
+	padding:20px;
+}
+.form-control{
+	background: transparent;
+}
+.form-control:focus{
+	background-color: :transparent;
+}
+.btn{
+	border-radius: none;
+	background-color: #f70e0e;
+	border:none;
+}
+.btn:hover{
+	background-color: 
+}
