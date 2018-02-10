@@ -1,6 +1,9 @@
 body{
-	background-color: #141414;
-	color:#f70e0e;
+	background: linear-gradient(90deg, rgba(20,20,20,0.9), rgba(20,20,20,0.9)), url(../images/4-01.jpg);
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+	color:#af0e20;
 	font-family: 'Playfair Display', serif !important;
 }
 .container{
@@ -19,6 +22,7 @@ body{
 .form-control{
 	background: transparent;
 	color:#fff;
+	
 }
 .form-control:focus{
 	background:transparent;
@@ -26,14 +30,14 @@ body{
 }
 .btn{
 	border-radius: none;
-	background-color: #f70e0e;
+	background-color: #af0e20;
 	border:none;
 }
 .btn:hover{
 	background-color:#b70000;
 	color:#000;
 }
-option{
+/*option{
 	background-color: #141414;
 	color: #fff;
-}
+}*/
