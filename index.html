@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blood Donation Camp 2018</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Blood Donation Camp 2018" />
+  <meta property="og:type" content="Event" />
+  <meta property="og:url" content="http://www.akgec.in/bdc18" />
+  <meta name="theme-color" content="#750715" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Blood Donation Camp is annual Event held in AKGEC, Ghaziabad with Rotary Blood Bank, Noida">
+  <meta name="author" content="Software Incubator">
+  <link rel="icon" href="assets/AKGEC.svg" type="image/svg" sizes="16x16">
+</head>
+<body>
+<style type="text/css">
+body {
+  overflow: hidden;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 1000;
+}
+
+#presvg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+</style>	
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="presvg">&nbsp;</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<script type="text/javascript">
+$(window).on('load', function() { 
+  $('#presvg').fadeOut(); 
+  $('#preloader').delay(350).fadeOut('slow'); 
+  $('body').delay(350).css({'overflow':'visible'});
+})
+</script>
+
+</body>
+</html>
