@@ -1,6 +1,7 @@
 body{
 	background-color: #141414;
 	color:#f70e0e;
+	font-family: 'Playfair Display', serif !important;
 }
 .container{
 	margin-top: 30px;
@@ -13,12 +14,15 @@ body{
 }
 .form {
 	padding:20px;
+
 }
 .form-control{
 	background: transparent;
+	color:#fff;
 }
 .form-control:focus{
-	background-color: :transparent;
+	background:transparent;
+	outline-color: #f70e0e;
 }
 .btn{
 	border-radius: none;
@@ -26,5 +30,10 @@ body{
 	border:none;
 }
 .btn:hover{
-	background-color: 
+	background-color:#b70000;
+	color:#000;
+}
+option{
+	background-color: #141414;
+	color: #fff;
 }
