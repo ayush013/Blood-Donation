@@ -148,14 +148,26 @@
   </div>
 </nav>
 
-<div id="landing"> 
+<div id="section-scroller-button">
+  <i class="caret"></i>
+</div>
+
+
+<div id="landing" class="section-scroll"> 
 
   <span id="landingtitle">Blood Donation Camp</span>
-  <span id="landingquotes"></span>  <span class="cursor"></span>
+  <span id="landingquotes"></span> 
 
 
 </div>
 
+<div id="mythfact" class="section-scroll"> 
+
+  <span id="landingtitle">Blood Donation Camp</span>
+  <span id="landingquotes"></span> 
+
+
+</div>
 
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
@@ -165,6 +177,7 @@
 <script type="text/javascript" src="js/parallax.js"></script>
 <script type="text/javascript" src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/typingEffect.js"></script>
+<script type="text/javascript" src="js/sectionScroller.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -211,6 +224,8 @@ $("#landingquotes").typing({
   // text color
   color: 'white',
 
+  loopCount: 1000,
+
   // text color when typing
   typingColor: 'yellow',
 
@@ -228,6 +243,14 @@ $("#landingquotes").typing({
 
 });
 
+</script>
+
+<script type="text/javascript">
+$(".section-scroll").sectionScroller({
+  scrollerButton: "#section-scroller-button",
+  scrollType: "swing",
+  scrollDuration: 900
+});
 </script>
 
 </body>
