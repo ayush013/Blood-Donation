@@ -1,0 +1,19 @@
+body {
+	font-family: 'Playfair Display', serif !important;
+/*	animation: heartbeat 10s infinite;
+*/	
+	background-color: #000;
+}
+
+  @keyframes heartbeat {
+    0%, 100% {
+    background-color: #000;
+    }
+    50% {
+    background: radial-gradient(ellipse at center, rgba(38,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    }
+  }
+
+#landing {
+	height: 100vh;
+}
