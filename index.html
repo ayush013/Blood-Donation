@@ -124,28 +124,9 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand" href="#">Ajay Kumar Garg Engineering College</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#controller" aria-controls="controller" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="controller">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Facts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Timeline</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Team</a>
-      </li>
-    </ul>
-  </div>
+
+  <a class="navbar-brand ml-auto" href="#">Rotary Club of Noida, India</a>
+
 </nav>
 
 <div id="section-scroller-button">
@@ -153,19 +134,19 @@
 </div>
 
 
-<div id="landing" class="section-scroll"> 
+<div class="section-scroll scrollable-section landing" data-section-title="Home"> 
 
   <span id="landingtitle">Blood Donation Camp</span>
+  <span id="landingdate">21<sup>st</sup> FEBRUARY 2018</span>
   <span id="landingquotes"></span> 
 
 
 </div>
 
-<div id="mythfact" class="section-scroll"> 
-
+<div class="section-scroll scrollable-section facts" data-section-title="Facts"> 
   <span id="landingtitle">Blood Donation Camp</span>
+  <span id="landingdate">21<sup>st</sup> FEBRUARY 2018</span>
   <span id="landingquotes"></span> 
-
 
 </div>
 
@@ -178,8 +159,10 @@
 <script type="text/javascript" src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/typingEffect.js"></script>
 <script type="text/javascript" src="js/sectionScroller.min.js"></script>
+<script type="text/javascript" src="js/section-scroll.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/section-scroll.css">
 
 <script type="text/javascript">
 $(window).on('load', function() { 
@@ -207,10 +190,10 @@ var parallax1 = new Parallax(scene1);
 <script type="text/javascript">
 $("#landingquotes").typing({
 
-  strings: ['A life may depend on a gesture from you, a bottle of Blood.', 
-  'The blood you donate gives someone another chance at life.', 
-  'Tears of a mother cannot save her Child. But your Blood can.',
-  'To the young and healthy its no loss. To sick its hope of life.'],
+  strings: [' "A life may depend on a gesture from you, a bottle of Blood! "', 
+  ' "The blood you donate gives someone another chance at life! "', 
+  ' "Tears of a mother cannot save her Child. But your Blood can! "',
+  ' "To the young and healthy its no loss. To sick its hope of life! "'],
 
   // time before backspacing in milliseconds
   eraseDelay: 1000,
@@ -230,10 +213,10 @@ $("#landingquotes").typing({
   typingColor: 'yellow',
 
   // opacity when typing
-  typingOpacity: '0.1',
+  typingOpacity: '0.2',
 
   // shows blink cursor
-  cursorBlink: false,
+  cursorBlink: true,
 
   // character for cursor
   cursorChar: '<small>_</small>',
@@ -248,9 +231,16 @@ $("#landingquotes").typing({
 <script type="text/javascript">
 $(".section-scroll").sectionScroller({
   scrollerButton: "#section-scroller-button",
-  scrollType: "swing",
-  scrollDuration: 900
+  scrollDuration: 1200
 });
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('body').sectionScroll(); 
+    })
+
 </script>
 
 </body>
