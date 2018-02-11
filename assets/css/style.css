@@ -1,3 +1,4 @@
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 body{
 	background: linear-gradient(90deg, rgba(20,20,20,0.9), rgba(20,20,20,0.9)), url(../images/4-01.jpg);
     background-size: cover;
@@ -22,22 +23,41 @@ body{
 .form-control{
 	background: transparent;
 	color:#fff;
-	
 }
+
 .form-control:focus{
 	background:transparent;
-	outline-color: #f70e0e;
+	outline:none !important;
+	border:1px solid #af0e20;
+	box-shadow: 0 0 10px #af0e20;
 }
 .btn{
 	border-radius: none;
-	background-color: #af0e20;
-	border:none;
+    background-color:transparent;
+    color: #fff;
+	border:2px solid #af0e20;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.btn:after{
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background-color: #af0e20;
+    transform: skewX(15deg);
+    z-index: -1;
+    transition: .5s;
 }
 .btn:hover{
-	background-color:#b70000;
-	color:#000;
-}
-/*option{
-	background-color: #141414;
-	color: #fff;
-}*/
+            cursor: pointer;
+            color:#fff;
+        }
+.btn:hover:after{
+            left: -10%;
+            width: 120%;
+        }
+
+
