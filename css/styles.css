@@ -21,6 +21,7 @@ body {
 .navbar {
 	padding: 5vh 5vw;
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+	padding-bottom: 0;
 }
 
 #landingtitle {
@@ -58,7 +59,7 @@ body {
     height: 43px;
     width: 43px;
     background-color: rgba(0,0,0,0);
-    z-index: 10;
+    z-index: 1050;
     cursor: pointer;
 }
 
@@ -106,4 +107,51 @@ body::-webkit-scrollbar
 
 body::-webkit-scrollbar-thumb {
     background-color: #2d0000;
+}
+
+.card { 
+	box-shadow:2px 2px 20px rgba(0,0,0,0.3); 
+	border:none; 
+	margin-bottom:30px;
+}
+
+
+.card-img-overlay {
+	top: unset;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0) 0%, rgba(0,0,0,1) 80%);
+    padding-bottom: 0;
+}
+
+.card-text {
+	font-weight: 200;
+	cursor: default;
+	font-size: 0.8rem;
+}
+
+.card-title {
+	cursor: default;
+	margin: 0;
+	text-align: center;
+}
+
+.team {
+	height: 100vh;
+}
+
+.card hr {
+	border-top: 2px solid rgb(255, 255, 255);
+    color: white;
+    margin: 0;
+    width: 0;
+}
+
+.card:hover hr {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.card:hover { 
+	opacity: 0.8;
+	transition: all 0.5s ease-in-out;
 }
