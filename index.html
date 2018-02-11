@@ -120,14 +120,51 @@
   </div>
 </div>
 
-<div id="landing"> TEST</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <a class="navbar-brand" href="#">Ajay Kumar Garg Engineering College</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#controller" aria-controls="controller" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="controller">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Facts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Timeline</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Team</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="landing"> 
+
+  <span id="landingtitle">Blood Donation Camp</span>
+  <span id="landingquotes"></span>  <span class="cursor"></span>
+
+
+</div>
 
 
 
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/typingEffect.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -137,6 +174,60 @@ $(window).on('load', function() {
   $('#preloader').delay(700).fadeOut('slow'); 
   $('body').delay(500).css({'overflow':'visible'});
 }) 
+</script>
+
+<script type="text/javascript">
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 2000,
+  offset: 0, 
+  easing: 'easeInOutCubic',
+});
+</script>
+
+<script type="text/javascript">
+/* $(document).ready(function() {
+var scene1 = $('#parallaxsidebar').get(0);
+var parallax1 = new Parallax(scene1);
+}); */ 
+</script>
+
+<script type="text/javascript">
+$("#landingquotes").typing({
+
+  strings: ['A life may depend on a gesture from you, a bottle of Blood.', 
+  'The blood you donate gives someone another chance at life.', 
+  'Tears of a mother cannot save her Child. But your Blood can.',
+  'To the young and healthy its no loss. To sick its hope of life.'],
+
+  // time before backspacing in milliseconds
+  eraseDelay: 1000,
+
+  // time before typing in milliseconds
+  typeDelay: 100,
+
+  // time before string typing in milliseconds
+  stringStartDelay: 5000,
+
+  // text color
+  color: 'white',
+
+  // text color when typing
+  typingColor: 'yellow',
+
+  // opacity when typing
+  typingOpacity: '0.1',
+
+  // shows blink cursor
+  cursorBlink: false,
+
+  // character for cursor
+  cursorChar: '<small>_</small>',
+
+  // enables fade animation
+  fade: true
+
+});
+
 </script>
 
 </body>
