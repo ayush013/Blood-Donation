@@ -60,4 +60,13 @@ body{
             width: 120%;
         }
 
+.galleryHeading{
+    padding:20px;
+    font-size: 3em;
+    font-family: Montserrat black;
 
+}
+
+.gallery{
+    padding:50px;
+}
