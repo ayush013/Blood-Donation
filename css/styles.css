@@ -19,10 +19,23 @@ body {
 }
 
 .navbar {
-	padding: 5vh 5vw;
+	padding: 5vh 8vw;
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
 	padding-bottom: 0;
 }
+
+.navbar-brand:hover hr {
+		width: 100%;
+}
+
+.navbar-brand hr {
+	border-top: 1px solid rgb(255, 255, 255);
+    color: white;
+    margin: 0;
+    width: 0;
+	transition: all 0.5s ease-in-out;
+}
+
 
 #landingtitle {
     font-size: 4rem;
@@ -86,6 +99,18 @@ body {
 	height: 100vh;
 }
 
+.gallery {
+	height: 100vh;
+}
+
+.container {
+	padding: 0 4vw;
+}
+
+.slick-slide {
+	margin: 0 20px;
+}
+
 .navbar-brand {
 	font-weight: 200;
 	text-transform: uppercase;
@@ -113,6 +138,7 @@ body::-webkit-scrollbar-thumb {
 	box-shadow:2px 2px 20px rgba(0,0,0,0.3); 
 	border:none; 
 	margin-bottom:30px;
+	transition: all 0.5s ease-in-out;
 }
 
 
@@ -127,6 +153,7 @@ body::-webkit-scrollbar-thumb {
 	font-weight: 200;
 	cursor: default;
 	font-size: 0.8rem;
+	text-align: center;
 }
 
 .card-title {
@@ -144,14 +171,55 @@ body::-webkit-scrollbar-thumb {
     color: white;
     margin: 0;
     width: 0;
+	transition: all 0.5s ease-in-out;
 }
 
 .card:hover hr {
 	width: 100%;
-	transition: all 0.5s ease-in-out;
 }
 
 .card:hover { 
 	opacity: 0.8;
-	transition: all 0.5s ease-in-out;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+}
+
+.nav-tabs .nav-link {
+    color: grey;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: white;
+    border: none;
+}
+
+.nav-link {
+    padding: 1.5rem 3rem;
+}
+
+.tab-content {
+	padding: 5vh 12vw;
+}
+
+.tabtitle {
+	font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.tab-img {
+	height: 46vh;
+	float: right;
 }
