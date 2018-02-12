@@ -212,6 +212,22 @@
 
   </div>
 
+  <div class="row typesection">
+  <div class="col-4">
+        <img src="assets/heart.svg" class="img-fluid" style="opacity: 0.4;">
+  </div>
+  <div class="col-8">
+      <div class="subsection">
+        <h1 class="mythtitle">Myth</h1>
+        <span id="typedmyth"></span> <span class="cursor"></span>
+      </div>
+      <div class="subsection">
+        <h1 class="mythtitle">Fact</h1>
+        <span id="typedfact"></span> <span class="cursor"></span>
+      </div>
+  </div>
+  </div>
+
 </div>
 
 <div class="section-scroll scrollable-section team container" data-section-title="Team"> 
@@ -445,16 +461,80 @@ $("#landingquotes").typing({
   loopCount: 1000,
 
   // text color when typing
-  typingColor: 'yellow',
+  typingColor: 'white',
 
   // opacity when typing
   typingOpacity: '0.2',
 
+  // enables fade animation
+  fade: true
+
+});
+
+$("#typedmyth").typing({
+
+  strings: [' "I will gain weight by donating blood."', 
+  ' "If I donate blood I am susceptible to contact diseases like HIV."', 
+  ' "I suffer from diabetes, I cannot donate blood."',
+  ' "I am too young or too old."'],
+
+  // time before backspacing in milliseconds
+  eraseDelay: 1000,
+
+  // time before typing in milliseconds
+  typeDelay: 100,
+
+  // time before string typing in milliseconds
+  stringStartDelay: 5000,
+
+  // text color
+  color: 'white',
+
+  loopCount: 1000,
+
+    // shows blink cursor
+  cursorBlink: true,
+
+  // text color when typing
+  typingColor: 'white',
+
+  // opacity when typing
+  typingOpacity: '0.2',
+
+  // enables fade animation
+  fade: true
+
+});
+
+$("#typedfact").typing({
+
+  strings: [' "People of our country requires 5 crore units of blood every year."', 
+  ' "And only 80 lakh units are donated in a year."', 
+  ' "Every 2 seconds someone needs blood."',
+  ' "There is no substitute for human blood."'],
+
+  // time before backspacing in milliseconds
+  eraseDelay: 1000,
+
+  // time before typing in milliseconds
+  typeDelay: 100,
+
+  // time before string typing in milliseconds
+  stringStartDelay: 5000,
+
+  // text color
+  color: 'white',
+
+  loopCount: 1000,
+
   // shows blink cursor
   cursorBlink: true,
 
-  // character for cursor
-  cursorChar: '<small>_</small>',
+  // text color when typing
+  typingColor: 'white',
+
+  // opacity when typing
+  typingOpacity: '0.2',
 
   // enables fade animation
   fade: true
