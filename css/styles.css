@@ -100,7 +100,7 @@ body {
 }
 
 .gallery {
-	min-height: 100vh;
+	min-height: 70vh;
 }
 
 .container {
@@ -187,11 +187,11 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 2px solid white;
     background-color: transparent;
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+    font-weight: bold;
 }
 
 .nav-tabs .nav-link {
     color: grey;
-    font-weight: bold;
 }
 
 .nav-tabs {
@@ -240,4 +240,17 @@ body::-webkit-scrollbar-thumb {
 
 .mythtitle {
 	font-weight: bold;
+}
+
+.tab-content>.tab-pane {
+    transition: opacity 0.7s ease-in-out;
+}
+
+.subsection {
+	min-height: 20vh;
+}
+
+.sectionheading {
+	font-weight: bold;
+	margin: 5vh 0;
 }

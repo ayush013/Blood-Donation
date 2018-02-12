@@ -232,8 +232,9 @@
 
 <div class="section-scroll scrollable-section team container" data-section-title="Team"> 
 
-  <div class="row">
+  <h1 class="sectionheading">Convenor</h1>
 
+  <div class="row">
 
         <div class="col">
           <div class="card ">
@@ -293,8 +294,8 @@
 
   </div>
 
+  <h1 class="sectionheading">Web Team</h1>
   <div class="row">
-
 
         <div class="col">
           <div class="card ">
@@ -356,12 +357,14 @@
 
 <div class="section-scroll scrollable-section gallery container" data-section-title="Gallery"> 
 
-<div id="gallery">
-  <div><img src="assets/gallery/1.jpg" class="img-fluid"></div>
-  <div><img src="assets/gallery/2.jpg" class="img-fluid" ></div>
-  <div><img src="assets/gallery/3.jpg" class="img-fluid"></div>
-  <div><img src="assets/gallery/4.jpg" class="img-fluid"></div>
-</div>
+  <h1 class="sectionheading">Gallery</h1>
+
+  <div id="gallery">
+    <div><img src="assets/gallery/1.jpg" class="img-fluid"></div>
+    <div><img src="assets/gallery/2.jpg" class="img-fluid" ></div>
+    <div><img src="assets/gallery/3.jpg" class="img-fluid"></div>
+    <div><img src="assets/gallery/4.jpg" class="img-fluid"></div>
+  </div>
 
 </div>
 
@@ -369,8 +372,6 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/parallax.js"></script>
-<script type="text/javascript" src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/typingEffect.js"></script>
 <script type="text/javascript" src="js/sectionScroller.min.js"></script>
 <script type="text/javascript" src="js/section-scroll.js"></script>
@@ -421,14 +422,6 @@ $(window).on('load', function() {
   $('#preloader').delay(700).fadeOut('slow'); 
   $('body').delay(500).css({'overflow':'visible'});
 }) 
-</script>
-
-<script type="text/javascript">
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 2000,
-  offset: 0, 
-  easing: 'easeInOutCubic',
-});
 </script>
 
 <script type="text/javascript">
@@ -553,7 +546,7 @@ $(".section-scroll").sectionScroller({
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $('body').sectionScroll(); 
+        $('.container').sectionScroll(); 
     })
 
 </script>
