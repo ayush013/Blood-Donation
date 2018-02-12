@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -17,18 +17,18 @@
 	<div class="row justify-content-center">	
 		<div class="col-md-9 form">
 	  <div class="form-row">
-	    <div class="form-group col-md-5">
+	    <div class="form-group col-md-6">
 	      <label for="student_no.">Student No.:</label>
 	      <input type="text" class="form-control" id="student_no." placeholder="Enter Student No.">
 	    </div>
-	    <div class="form-group col-md-5 offset-md-1">
+	    <div class="form-group col-md-6">
 	      <label for="name">Name:</label>
 	      <input type="text" class="form-control" id="name" placeholder="Enter Name">
 	    </div>
 	  </div>
 	  <div class="form-row">
 	    
-	    <div class="form-group col-md-5">
+	    <div class="form-group col-md-6">
 	      <label for="year">Year:</label>
 	      <select id="year" class="form-control">
 	        <option selected>1</option>
@@ -37,7 +37,7 @@
 	        <option>4</option>
 	      </select>
 	    </div>
-	    <div class="form-group col-md-5 offset-md-1">
+	    <div class="form-group col-md-6 ">
 	      <label for="blood-group">Blood Group:</label>
 	      <select id="blood-group" class="form-control">
 	        <option selected>A+</option>
@@ -54,7 +54,7 @@
 	  </div>
 	  <div class="form-row">
 	    
-	    <div class="form-group col-md-5">
+	    <div class="form-group col-md-12">
 	      <label for="Course">Course:</label>
 	      <select id="Course" class="form-control">
 	        <option selected>B.Tech</option>
@@ -63,51 +63,41 @@
 	        <option>MCA</option>
 	      </select>
 	    </div>
-	    <div class="form-group col-md-5 offset-md-1">
-	      <label for="branch">Branch:</label>
-	      <select id="branch" class="form-control">
-	        <option selected>CSE</option>
-	        <option>IT</option>
-	        <option>ECE</option>
-	        <option>EI</option>
-	        <option>EN</option>
-	        <option>ME</option>
-	        <option>CIVIL</option>
-	        <option>MCA</option>
-	      </select>
-	    </div>
+	    
 	  </div>
 	  <div class="form-row">
-	  	<div class="form-group">
-	  		<label class="col-md-3">Gender:</label>
+	  	  <div class="form-group col-md-12">
+	  	  	<div class="row">
+	  		<label class="col-md-4">Gender:</label>
 	        <div class="form-check form-check-inline col-md-3">
 			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
-			  <label class="form-check-label" for="male">Male</label>
+			  <label class="form-check-label" for="male"><span></span>Male</label>
 		    </div>
 		    <div class="form-check form-check-inline col-md-3">
 			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
-			  <label class="form-check-label" for="female">Female</label>
+			  <label class="form-check-label" for="female"><span></span>Female</label>
 		    </div>
-	</div>
+		</div>
+	      </div>
 	  </div>
 	  <div class="form-row">
-	  	<div class="form-group col-md-5">
+	  	<div class="form-group col-md-6">
 	  		<label for="email" >Email ID:</label> 
 	  		<input id="email" type="email" placeholder="Enter Email" class="form-control">
 	  	</div>
-	  	<div class="form-group col-md-5 offset-md-1">
+	  	<div class="form-group col-md-6">
 	  		<label for="contact_number" >Contact No.:</label> 
 	  		<input id="contact_number" type="tel" placeholder="Enter contact no" class="form-control">
 	  	</div>
 	  </div>
 	  <div class="form-row">
 	    <div class="form-check form-check-inline col-md-3">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Hosteller" value="Hosteller">
-			  <label class="form-check-label" for="Hosteller">Hosteller</label>
+			  <input class="form-check-input" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller">
+			  <label class="form-check-label" for="Hosteller"><span></span>Hosteller</label>
 		</div>
-		<div class="form-check form-check-inline col-md-3">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="day_scholar" value="Day Scholar">
-			  <label class="form-check-label" for="day_scholar">Day Scholar</label>
+		<div class="form-check form-check-inline col-md-5">
+			  <input class="form-check-input" type="radio" name="inlineRadioOption" id="day_scholar" value="Day Scholar">
+			  <label class="form-check-label" for="day_scholar"><span></span>Day Scholar</label>
 		</div>
 	  </div>
 	  <div class="form-row justify-content-center">

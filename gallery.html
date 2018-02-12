@@ -13,6 +13,9 @@
 
 </head>
 <body>
+<div class="background">
+	<h1>GALLERY</h1>
+</div>
 <h3 class="text-center galleryHeading">GALLERY</h3>	
 <div class="gallery">
 	<div><img src="assets/images/img/1.jpg" class="img-fluid"></div>
@@ -54,6 +57,13 @@
   ]
       });
     });
+
+	 	var $background = $('.background');
+	var $win = $(window);
+	$win.on('scroll',function(){
+		var top = $win.scrollTop()/5;
+		$background.css('transform','translate(' + top +'px,0)');
+	});
 </script>
 </body>
 </html>
