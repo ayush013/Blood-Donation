@@ -83,7 +83,7 @@ $(document).ready(function(){
 	function validate_contact_no()
 	{
 		var contact = $('#contact_number').val();
-		var regex = /([6-9]{1}[0-9]{9})/;//add regex here
+		var regex = /^([6-9]{1}[0-9]{9})$/;//add regex here
 		//check if its empty
 		if(contact == '')
 		{
