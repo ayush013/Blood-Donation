@@ -42,7 +42,7 @@ body {
     font-weight: 600;
     text-align: center;
     display: block;
-    padding-top: 37vh;
+    padding-top: 32vh;
     text-transform: uppercase;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .container {
-	padding: 0 4vw;
+	padding: 5vh 4vw;
 }
 
 .slick-slide {
@@ -252,7 +252,7 @@ body::-webkit-scrollbar-thumb {
 
 .sectionheading {
 	font-weight: bold;
-	margin: 5vh 0;
+	margin: 0 0 8vh 0;
 }
 
 #svgbeat {
@@ -260,4 +260,91 @@ body::-webkit-scrollbar-thumb {
 	top: 39vh;
 	left: 0;
 	z-index: -1;
+}
+
+#svgoverlay {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 28%, rgba(0,0,0,1) 80%) no-repeat fixed center;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.form {
+	padding: 0 5vw 5vh 5vw;
+
+}
+.form-control{
+	background: transparent;
+	color:#fff;
+}
+
+.form-control:focus{
+	background:transparent;
+	outline:none !important;
+	border:1px solid #af0e20;
+	box-shadow: 0 0 10px #af0e20;
+}
+option{
+    background-color:rgb(25,0,0);
+    color:#fff;
+}
+
+.btn{
+	border-radius: none;
+    background-color:transparent;
+    color: #fff;
+	border:2px solid #af0e20;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-top: 3vh;
+}
+
+.btn:after{
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background-color: #af0e20;
+    transform: skewX(15deg);
+    z-index: -1;
+    transition: .5s;
+}
+.btn:hover{
+            cursor: pointer;
+            color:#fff;
+        }
+
+.btn:hover:after{
+            left: -10%;
+            width: 120%;
+        }
+
+input[type='radio']{
+    display: none;
+}
+input[type='radio'] + .form-check-label span{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border:3px solid #af0e20;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    background-color:#fff;
+}
+input[type="radio"]:checked + .form-check-label span{
+     background-color:#141414;
+}
+input[type="radio"] + .form-check-label span,
+input[type="radio"]:checked + .form-check-label span {
+  -webkit-transition:background-color 0.1s linear;
+  -o-transition:background-color 0.1s linear;
+  -moz-transition:background-color 0.1s linear;
+  transition:background-color 0.1s linear;
 }

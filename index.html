@@ -138,6 +138,7 @@
 
 <div class="section-scroll scrollable-section landing container" data-section-title="Home"> 
 
+  <div id="svgoverlay"></div>
   <img src="assets/beatbg.svg" id="svgbeat">
   <span id="landingtitle" class="wow fadeIn" data-wow-delay="0.5s">Blood Donation Camp</span>
   <span id="landingdate" class="wow fadeIn" data-wow-delay="0.5s">21<sup>st</sup> FEBRUARY 2018</span>
@@ -228,6 +229,19 @@
         <span id="typedfact"></span> <span class="cursor"></span>
       </div>
   </div>
+  </div>
+
+</div>
+
+<div class="section-scroll scrollable-section gallery container" data-section-title="Gallery"> 
+
+  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Gallery</h1>
+
+  <div id="gallery" class="wow fadeIn" data-wow-delay="0.5s">
+    <div><img src="assets/gallery/1.jpg" class="img-fluid"></div>
+    <div><img src="assets/gallery/2.jpg" class="img-fluid" ></div>
+    <div><img src="assets/gallery/3.jpg" class="img-fluid"></div>
+    <div><img src="assets/gallery/4.jpg" class="img-fluid"></div>
   </div>
 
 </div>
@@ -357,18 +371,106 @@
   </div>  
 </div>
 
-<div class="section-scroll scrollable-section gallery container" data-section-title="Gallery"> 
+<div class="section-scroll scrollable-section register container" data-section-title="Registration"> 
 
-  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Gallery</h1>
-
-  <div id="gallery" class="wow fadeIn" data-wow-delay="0.5s">
-    <div><img src="assets/gallery/1.jpg" class="img-fluid"></div>
-    <div><img src="assets/gallery/2.jpg" class="img-fluid" ></div>
-    <div><img src="assets/gallery/3.jpg" class="img-fluid"></div>
-    <div><img src="assets/gallery/4.jpg" class="img-fluid"></div>
-  </div>
+  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Register Yourself</h1>
+    <form id="registration_form">
+      <div class="form">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="student_no.">Student No.:</label>
+          <input type="text" class="form-control" id="student_no." placeholder="Enter Student No.">
+          <span id="err_student_no."></span>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+          <span id="err_name"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        
+        <div class="form-group col-md-6">
+          <label for="year">Year:</label>
+          <select id="year" class="form-control">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 ">
+          <label for="blood-group">Blood Group:</label>
+          <select id="blood-group" class="form-control">
+            <option selected>A+</option>
+            <option>A-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>Don't Know</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        
+        <div class="form-group col-md-12">
+          <label for="Course">Course:</label>
+          <select id="Course" class="form-control">
+            <option selected>B.Tech</option>
+            <option>M.Tech</option>
+            <option>MBA</option>
+            <option>MCA</option>
+          </select>
+        </div>
+        
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="row">
+          <label class="col-md-4">Gender:</label>
+            <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
+          <label class="form-check-label" for="male"><span></span>Male</label>
+          </div>
+          <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+          <label class="form-check-label" for="female"><span></span>Female</label>
+          </div>
+      </div>
+          </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email" >Email ID:</label> 
+          <input id="email" type="email" placeholder="Enter Email" class="form-control">
+          <span id="err_email"></span>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="contact_number" >Contact No.:</label> 
+          <input id="contact_number" type="tel" placeholder="Enter contact no" class="form-control">
+          <span id="err_contact_number"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller">
+          <label class="form-check-label" for="Hosteller"><span></span>Hosteller</label>
+      </div>
+      <div class="form-check form-check-inline col-md-5">
+          <input class="form-check-input" type="radio" name="inlineRadioOption" id="day_scholar" value="Day Scholar">
+          <label class="form-check-label" for="day_scholar"><span></span>Day Scholar</label>
+      </div>
+      </div>
+      <div class="form-row justify-content-center">
+      <button type="submit" class="btn col-md-4" >Register</button>
+    </div>
+     </form>
 
 </div>
+
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
