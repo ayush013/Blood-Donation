@@ -19,7 +19,7 @@
     overflow: hidden;
   }
 
-  #preloader {
+  #loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -544,7 +544,7 @@ new WOW().init();
 <script type="text/javascript">
 $(window).on('load', function() { 
   $('#presvg').fadeOut(); 
-  $('#preloader').delay(700).fadeOut('slow'); 
+  $('#loader').delay(700).fadeOut('slow'); 
   $('body').delay(500).css({'overflow':'visible'});
 }) 
 </script>
