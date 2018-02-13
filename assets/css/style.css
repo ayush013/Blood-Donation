@@ -74,7 +74,7 @@ option{
     width: 15px;
     color:#af0e20;
 }*/
-.btn:visited{
+.btn:focus{
     border: none;
 }
 input[type='radio']{
@@ -128,4 +128,10 @@ input[type="radio"]:checked + .form-check-label span {
 .error{
     color:#af0e20;
     font-size: 0.75em;
+}
+.swal-icon--success__line{
+    background-color: #af0e20;
+}
+.swal-button{
+    background-color: #af0e20;
 }
