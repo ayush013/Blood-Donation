@@ -58,10 +58,10 @@
       stroke-dasharray: 150;
     }
   }
-</style>	
+</style>  
 
 <!-- Preloader -->
-<div id="preloader">
+<div id="loader">
   <div id="presvg">
     <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 612">
     <style type="text/css">
@@ -374,103 +374,102 @@
 <div class="section-scroll scrollable-section register container" data-section-title="Registration"> 
 
   <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Register Yourself</h1>
-    <form id="registration_form">
-      <div class="form">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="student_no.">Student No.:</label>
-          <input type="text" class="form-control" id="student_no." placeholder="Enter Student No.">
-          <span id="err_student_no."></span>
+    <form id="registration_form" method="POST">
+      <div class="form wow fadeIn">
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="student_no">Student No.:</label>
+            <input type="text" class="form-control" id="student_no" placeholder="Enter Student No." name="student_no" autocomplete="off">
+            <span id="err_student_no" class="error"></span>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" autocomplete="off">
+            <span id="err_name" class="error"></span>
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter Name">
-          <span id="err_name"></span>
+        <div class="form-row">
+          
+          <div class="form-group col-md-6">
+            <label for="number">Year:</label>
+            <select id="number" class="form-control" name="year">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 ">
+            <label for="blood-group">Blood Group:</label>
+            <select id="blood-group" class="form-control" name="blood-group">
+              <option selected value="AP">A+</option>
+              <option value="AN">A-</option>
+              <option value="ABP">AB+</option>
+              <option value="ABN">AB-</option>
+              <option value="BP">B+</option>
+              <option value="BN">B-</option>
+              <option value="OP">O+</option>
+              <option value="ON">O-</option>
+              <option value="Don't know">Don't Know</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        
-        <div class="form-group col-md-6">
-          <label for="year">Year:</label>
-          <select id="year" class="form-control">
-            <option selected>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </div>
-        <div class="form-group col-md-6 ">
-          <label for="blood-group">Blood Group:</label>
-          <select id="blood-group" class="form-control">
-            <option selected>A+</option>
-            <option>A-</option>
-            <option>AB+</option>
-            <option>AB-</option>
-            <option>B+</option>
-            <option>B-</option>
-            <option>O+</option>
-            <option>O-</option>
-            <option>Don't Know</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        
-        <div class="form-group col-md-12">
-          <label for="Course">Course:</label>
-          <select id="Course" class="form-control">
-            <option selected>B.Tech</option>
-            <option>M.Tech</option>
-            <option>MBA</option>
-            <option>MCA</option>
-          </select>
-        </div>
-        
-      </div>
-      <div class="form-row">
+        <div class="form-row">
+          
           <div class="form-group col-md-12">
-            <div class="row">
-          <label class="col-md-4">Gender:</label>
+            <label for="course">Course:</label>
+            <select id="course" class="form-control" name="course">
+              <option selected value="B.Tech">B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+            </select>
+          </div>
+          
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+              <div class="row">
+            <label class="col-md-4">Gender:</label>
+              <div class="form-check form-check-inline col-md-3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male" checked>
+            <label class="form-check-label" for="male"><span></span>Male</label>
+            </div>
             <div class="form-check form-check-inline col-md-3">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
-          <label class="form-check-label" for="male"><span></span>Male</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+            <label class="form-check-label" for="female"><span></span>Female</label>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email" >Email ID:</label> 
+            <input id="email" type="email" placeholder="Enter Email" class="form-control" name="email" autocomplete="off">
+            <span id="err_email" class="error"></span>
           </div>
+          <div class="form-group col-md-6">
+            <label for="contact_number" >Contact No.:</label> 
+            <input id="contact_number" type="tel" placeholder="Enter contact no" class="form-control" name="contact" autocomplete="off">
+            <span id="err_contact_no" class="error"></span>
+          </div>
+        </div>
+        <div class="form-row">
           <div class="form-check form-check-inline col-md-3">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
-          <label class="form-check-label" for="female"><span></span>Female</label>
-          </div>
-      </div>
-          </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="email" >Email ID:</label> 
-          <input id="email" type="email" placeholder="Enter Email" class="form-control">
-          <span id="err_email"></span>
+            <input class="form-check-input" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller" checked>
+            <label class="form-check-label" for="Hosteller"><span></span>Hosteller</label>
         </div>
-        <div class="form-group col-md-6">
-          <label for="contact_number" >Contact No.:</label> 
-          <input id="contact_number" type="tel" placeholder="Enter contact no" class="form-control">
-          <span id="err_contact_number"></span>
+        <div class="form-check form-check-inline col-md-5">
+            <input class="form-check-input" type="radio" name="inlineRadioOption" id="day_scholar" value="Day_Scholar">
+            <label class="form-check-label" for="day_scholar"><span></span>Day Scholar</label>
         </div>
+        </div>
+        <div class="form-row justify-content-center">
+        <button type="submit" class="btn col-md-4" id = 'register'>Register</button>
       </div>
-      <div class="form-row">
-        <div class="form-check form-check-inline col-md-3">
-          <input class="form-check-input" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller">
-          <label class="form-check-label" for="Hosteller"><span></span>Hosteller</label>
-      </div>
-      <div class="form-check form-check-inline col-md-5">
-          <input class="form-check-input" type="radio" name="inlineRadioOption" id="day_scholar" value="Day Scholar">
-          <label class="form-check-label" for="day_scholar"><span></span>Day Scholar</label>
-      </div>
-      </div>
-      <div class="form-row justify-content-center">
-      <button type="submit" class="btn col-md-4" >Register</button>
-    </div>
      </form>
 
 </div>
-
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -487,6 +486,11 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <script type="text/javascript" src="js/validations.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 
 <script type="text/javascript">
    $(document).ready(function(){

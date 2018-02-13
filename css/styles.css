@@ -275,6 +275,7 @@ body::-webkit-scrollbar-thumb {
 	padding: 0 5vw 5vh 5vw;
 
 }
+
 .form-control{
 	background: transparent;
 	color:#fff;
@@ -285,12 +286,12 @@ body::-webkit-scrollbar-thumb {
 	outline:none !important;
 	border:1px solid #af0e20;
 	box-shadow: 0 0 10px #af0e20;
+    color:#fff;
 }
 option{
     background-color:rgb(25,0,0);
     color:#fff;
 }
-
 .btn{
 	border-radius: none;
     background-color:transparent;
@@ -298,9 +299,8 @@ option{
 	border:2px solid #af0e20;
 	overflow: hidden;
 	transition: 0.5s;
-	margin-top: 3vh;
+	margin-top: 4vh;
 }
-
 .btn:after{
     content: '';
     width: 0px;
@@ -317,11 +317,15 @@ option{
             cursor: pointer;
             color:#fff;
         }
-
 .btn:hover:after{
             left: -10%;
             width: 120%;
         }
+
+.btn:focus{
+    border: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
 
 input[type='radio']{
     display: none;
@@ -336,10 +340,10 @@ input[type='radio'] + .form-check-label span{
     border:3px solid #af0e20;
     -moz-border-radius:  50%;
     border-radius:  50%;
-    background-color:#fff;
+    background-color:transparent;
 }
 input[type="radio"]:checked + .form-check-label span{
-     background-color:#141414;
+     background-color:#fff;
 }
 input[type="radio"] + .form-check-label span,
 input[type="radio"]:checked + .form-check-label span {
@@ -347,4 +351,15 @@ input[type="radio"]:checked + .form-check-label span {
   -o-transition:background-color 0.1s linear;
   -moz-transition:background-color 0.1s linear;
   transition:background-color 0.1s linear;
+}
+
+.error{
+    color:#af0e20;
+    font-size: 0.75em;
+}
+.swal-icon--success__line{
+    background-color: #af0e20;
+}
+.swal-button{
+    background-color: #af0e20;
 }
