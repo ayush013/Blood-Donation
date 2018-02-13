@@ -8,11 +8,12 @@
 		$email = $_POST['email'];
 		$contact = $_POST['contact'];
 		$year = $_POST['year'];
-		$branch = $_POST['branch'];
+		//$branch = $_POST['branch'];
 		$course = $_POST['course'];
 		$gender = $_POST['gender'];
 		$hostler = $_POST['hostler'];
 		$bloodgroup = $_POST['bloodgroup'];
+		$error;
 		
 		if(empty($name))
 		{
@@ -85,13 +86,13 @@
 			{
 
 
-			    $stmt = $pdo->prepare("INSERT INTO users (name, email, contact, year, branch, course, blood_group, hostler, gender,student_no) VALUES (:name,:email,:contact,:year,:branch,:course,:blood_group,:hostler,:gender,:student_no)");
+			    $stmt = $pdo->prepare("INSERT INTO users (name, email, contact, year, course, blood_group, hostler, gender,student_no) VALUES (:name,:email,:contact,:year,:course,:blood_group,:hostler,:gender,:student_no)");
 	             
 	           $stmt->bindparam(":name", $name);
 	           $stmt->bindparam(":contact", $contact);
 	           $stmt->bindparam(":email", $email);
 	           $stmt->bindparam(":year", $year);   
-	           $stmt->bindparam(":branch", $branch);
+	          // $stmt->bindparam(":branch", $branch);
 	           $stmt->bindparam(":course",$course);
 	           $stmt->bindparam(":blood_group", $bloodgroup);
 	           $stmt->bindparam(":hostler",$hostler);
@@ -102,7 +103,7 @@
 	           	{
 	           		$error['status'] = 0;
 	           		$message = file_get_contents('mail_templates/bdc.html');//replace the mail template
-	          		//$message = str_replace('%link%', $link, $message); for sending email purpose
+	          		$message = str_replace('%name%', $name, $message); //for sending email purpose
 	          		$subject="Welcome";
 	          		send_mail($email,$subject,$message);
             	}  

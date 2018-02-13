@@ -26,7 +26,7 @@
     $mail->Body = "hello this is my message"; 
     $mail->MsgHTML($message);
     $bool = $mail->send();
-
+    //return $bool;
     if(!$bool) {
      echo 'Message could not be sent.';
      echo 'Mailer Error: ' . $mail->ErrorInfo;
