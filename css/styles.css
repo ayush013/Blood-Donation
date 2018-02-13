@@ -108,7 +108,7 @@ body {
 }
 
 .slick-slide {
-	margin: 0 20px;
+	margin: 0 11px;
 }
 
 .navbar-brand {
@@ -205,11 +205,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-link {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4rem;
 }
 
 .tab-content {
-	padding: 5vh 12vw;
+	padding: 5vh 8vw;
 }
 
 .tabtitle {
@@ -253,4 +253,11 @@ body::-webkit-scrollbar-thumb {
 .sectionheading {
 	font-weight: bold;
 	margin: 5vh 0;
+}
+
+#svgbeat {
+	position: absolute;
+	top: 39vh;
+	left: 0;
+	z-index: -1;
 }

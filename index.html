@@ -138,15 +138,17 @@
 
 <div class="section-scroll scrollable-section landing container" data-section-title="Home"> 
 
-  <span id="landingtitle">Blood Donation Camp</span>
-  <span id="landingdate">21<sup>st</sup> FEBRUARY 2018</span>
-  <span id="landingquotes"></span> 
+  <img src="assets/beatbg.svg" id="svgbeat">
+  <span id="landingtitle" class="wow fadeIn" data-wow-delay="0.5s">Blood Donation Camp</span>
+  <span id="landingdate" class="wow fadeIn" data-wow-delay="0.5s">21<sup>st</sup> FEBRUARY 2018</span>
+  <span id="landingdate" class="wow fadeIn" data-wow-delay="0.5s" style="padding-top: 1vh;">MECHANICAL BLOCK</span>
+  <span id="landingquotes" class="wow fadeIn" data-wow-delay="0.5s"></span> 
 </div>
 
 <div class="section-scroll scrollable-section facts container" data-section-title="Facts"> 
 
 
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs wow fadeIn" data-wow-delay="0.5s" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" href="#ricmartin" role="tab" data-toggle="tab">Ric Martin</a>
   </li>
@@ -162,7 +164,7 @@
 </ul>
 
 <!-- Tab panes -->
-<div class="tab-content">
+<div class="tab-content wow fadeIn" data-wow-delay="0.5s">
     <div role="tabpanel" class="tab-pane fade show active" id="ricmartin">
       <h1 class="tabtitle">RIC MARTIN, THE "WALKING TALKING PLATELET FACTORY"</h1>
       <img src="assets/ricmartin.png" class="img-fluid tab-img" >
@@ -212,16 +214,16 @@
 
   </div>
 
-  <div class="row typesection">
+  <div class="row typesection wow fadeIn" data-wow-delay="0.5s">
   <div class="col-4">
         <img src="assets/heart.svg" class="img-fluid" style="opacity: 0.4;">
   </div>
   <div class="col-8">
-      <div class="subsection">
+      <div class="subsection wow fadeIn" data-wow-delay="0.5s">
         <h1 class="mythtitle">Myth</h1>
         <span id="typedmyth"></span> <span class="cursor"></span>
       </div>
-      <div class="subsection">
+      <div class="subsection wow fadeIn" data-wow-delay="0.5s">
         <h1 class="mythtitle">Fact</h1>
         <span id="typedfact"></span> <span class="cursor"></span>
       </div>
@@ -232,9 +234,9 @@
 
 <div class="section-scroll scrollable-section team container" data-section-title="Team"> 
 
-  <h1 class="sectionheading">Convenor</h1>
+  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Convenor</h1>
 
-  <div class="row">
+  <div class="row wow fadeIn" data-wow-delay="0.5s">
 
         <div class="col">
           <div class="card ">
@@ -294,8 +296,8 @@
 
   </div>
 
-  <h1 class="sectionheading">Web Team</h1>
-  <div class="row">
+  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Web Team</h1>
+  <div class="row wow fadeIn" data-wow-delay="0.5s">
 
         <div class="col">
           <div class="card ">
@@ -357,9 +359,9 @@
 
 <div class="section-scroll scrollable-section gallery container" data-section-title="Gallery"> 
 
-  <h1 class="sectionheading">Gallery</h1>
+  <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Gallery</h1>
 
-  <div id="gallery">
+  <div id="gallery" class="wow fadeIn" data-wow-delay="0.5s">
     <div><img src="assets/gallery/1.jpg" class="img-fluid"></div>
     <div><img src="assets/gallery/2.jpg" class="img-fluid" ></div>
     <div><img src="assets/gallery/3.jpg" class="img-fluid"></div>
@@ -376,11 +378,13 @@
 <script type="text/javascript" src="js/sectionScroller.min.js"></script>
 <script type="text/javascript" src="js/section-scroll.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 <script type="text/javascript">
    $(document).ready(function(){
@@ -416,19 +420,16 @@
     });
 </script>
 
+<script>
+new WOW().init();
+</script>
+
 <script type="text/javascript">
 $(window).on('load', function() { 
   $('#presvg').fadeOut(); 
   $('#preloader').delay(700).fadeOut('slow'); 
   $('body').delay(500).css({'overflow':'visible'});
 }) 
-</script>
-
-<script type="text/javascript">
-/* $(document).ready(function() {
-var scene1 = $('#parallaxsidebar').get(0);
-var parallax1 = new Parallax(scene1);
-}); */ 
 </script>
 
 <script type="text/javascript">
