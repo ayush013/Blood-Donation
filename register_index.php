@@ -143,7 +143,18 @@
   <span id="landingtitle" class="wow fadeIn" data-wow-delay="0.5s">Blood Donation Camp</span>
   <span id="landingdate" class="wow fadeIn" data-wow-delay="0.5s">21<sup>st</sup> FEBRUARY 2018</span>
   <span id="landingdate" class="wow fadeIn" data-wow-delay="0.5s" style="padding-top: 1vh;">MECHANICAL BLOCK</span>
-  <span id="landingquotes" class="wow fadeIn" data-wow-delay="0.5s"></span> 
+  <span id="landingquotes" class="wow fadeIn" data-wow-delay="0.5s"></span> <span style="opacity: 0;"></span>
+  <a href="#scrollto-section-5" id="donate">Donate</a>
+
+    <a href="http://www.silive.in" target="_blank" style="color: white;">
+    <div id="sdc">
+      <span>Site Donated by</span>
+      <br>
+      <img src="assets/SILOGO.svg">
+      <span id="si">SOFTWARE <br> INCUBATOR</span>
+    </div>
+    </a>
+
 </div>
 
 <div class="section-scroll scrollable-section facts container" data-section-title="Facts"> 
@@ -371,7 +382,7 @@
   </div>  
 </div>
 
-<div class="section-scroll scrollable-section register container" data-section-title="Registration"> 
+<div class="section-scroll scrollable-section register container" id="registersection" data-section-title="Registration"> 
 
   <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Register Yourself</h1>
     <form id="registration_form" method="POST">

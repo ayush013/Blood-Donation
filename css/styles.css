@@ -269,6 +269,7 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .form {
@@ -362,4 +363,61 @@ input[type="radio"]:checked + .form-check-label span {
 }
 .swal-button{
     background-color: #af0e20;
+}
+
+#sdc {
+	position: absolute;
+	bottom: 8vh;
+	left: 5vw;
+	z-index: 1000;
+}
+
+#sdc span {
+	font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+#sdc img {
+	height: 7vh;
+}
+
+#si {
+	font-weight: 700 !important;
+    float: right;
+}
+
+#donate {
+    z-index: 1000;
+    position: absolute;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 2vh 4vw;
+    color: white;
+    font-weight: bold;
+    margin: 0 31vw;
+    font-size: 1.2rem;
+    border-radius: 13px;
+    bottom: 17vh;
+}
+
+#donate:after{
+    content: '';
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, 0.1);
+    z-index: -1;
+    transition: .3s;
+    border-radius: 13px;
+}
+
+#donate:hover{
+		text-decoration: none;
+}
+
+#donate:hover:after{
+    width: 100%;
 }
