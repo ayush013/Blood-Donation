@@ -61,8 +61,8 @@
 </style>  
 
 <!-- Preloader -->
-<div id="loader">
-  <div id="presvg">
+<div id="loader" class="loader">
+  <div id="presvg" class="loader">
     <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 612">
     <style type="text/css">
       .st0{enable-background:new;}
@@ -118,14 +118,23 @@
     </g>
     </svg>
   </div>
-</div>
+</div>  
+
+    <div id="sdc">
+      <a href="http://www.silive.in" target="_blank" style="color: white;">
+        <span>Site Donated by</span>
+        <br>
+        <img src="assets/SILOGO.svg">
+        <span id="si">SOFTWARE <br> INCUBATOR</span>
+      </a>
+    </div>
 
 <div id="section-scroller-button">
   <i class="caret"></i>
 </div>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<nav class="navbar navbar-expand-lg  navbar-dark">
   <a class="navbar-brand" href="#">Ajay Kumar Garg Engineering College
    <hr>
   </a>
@@ -146,14 +155,7 @@
   <span id="landingquotes" class="wow fadeIn" data-wow-delay="0.5s"></span> <span style="opacity: 0;"></span>
   <a href="#scrollto-section-5" id="donate">Donate</a>
 
-    <a href="http://www.silive.in" target="_blank" style="color: white;">
-    <div id="sdc">
-      <span>Site Donated by</span>
-      <br>
-      <img src="assets/SILOGO.svg">
-      <span id="si">SOFTWARE <br> INCUBATOR</span>
-    </div>
-    </a>
+    
 
 </div>
 
@@ -227,10 +229,10 @@
   </div>
 
   <div class="row typesection wow fadeIn" data-wow-delay="0.5s">
-  <div class="col-4">
+  <div class="col-12 col-sm-4">
         <img src="assets/heart.svg" class="img-fluid" style="opacity: 0.4;">
   </div>
-  <div class="col-8">
+  <div class="col-12 col-sm-8">
       <div class="subsection wow fadeIn" data-wow-delay="0.5s">
         <h1 class="mythtitle">Myth</h1>
         <span id="typedmyth"></span> <span class="cursor"></span>
@@ -261,122 +263,129 @@
 
   <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Convenor</h1>
 
-  <div class="row wow fadeIn" data-wow-delay="0.5s">
+  <div class="row wow fadeIn justify-content-center" data-wow-delay="0.5s">
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/parashar.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong>DR. V.K PARASHAR</strong></h4>
             <hr>
-            <p class="card-text">UI/UX Developer</p>
           </div>
         </div>
         </div>
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
+          <a href="https://www.facebook.com/xeonder.aman" target="_blank" style="cursor: default;">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/aman.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong>AMAN TIWARRI</strong></h4>
             <hr>
-            <p class="card-text">UI/UX Developer</p>
+          </div>
+        </div>
+        </a>
+        </div>
+
+        <div class="col-6 col-md-2 col-sm-6">
+          <div class="card ">
+          <img class="card-img-top" src="./assets/astha.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <h4 class="card-title"><strong>ASTHA PANDEY</strong></h4>
+            <hr>
           </div>
         </div>
         </div>
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/kanak.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong>KANAK GARG</strong></h4>
             <hr>
-            <p class="card-text">UI/UX Developer</p>
           </div>
         </div>
         </div>
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
+          <a href="https://www.facebook.com/sumit.yadav.330467" target="_blank" style="cursor: default;">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/sumit.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong>SUMIT YADAV</strong></h4>
             <hr>
-            <p class="card-text">UI/UX Developer</p>
           </div>
         </div>
-        </div>
-
-        <div class="col">
-          <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
-          <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
-            <hr>
-            <p class="card-text">UI/UX Developer</p>
-          </div>
-        </div>
+        </a>
         </div>
 
 
   </div>
 
   <h1 class="sectionheading wow fadeIn" data-wow-delay="0.5s">Web Team</h1>
-  <div class="row wow fadeIn" data-wow-delay="0.5s">
+  <div class="row wow fadeIn justify-content-center" data-wow-delay="0.5s">
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6" >
+          <a href="https://www.facebook.com/ayush013" target="_blank" style="cursor: default;">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/ayush.jpg" alt="Card image cap">
           <div class="card-img-overlay">
             <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
             <hr>
             <p class="card-text">UI/UX Developer</p>
           </div>
         </div>
+        </a>
         </div>
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
+        <a href="https://www.facebook.com/mayurpathak52" target="_blank" style="cursor: default;">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/mayur.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong>MAYUR PATHAK</strong></h4>
+            <hr>
+            <p class="card-text"> Developer</p>
+          </div>
+        </div>
+        </a>
+        </div>
+
+        <div class="col-6 col-md-2 col-sm-6">
+        <a href="https://www.facebook.com/arparam" target="_blank" style="cursor: default;">
+          <div class="card ">
+          <img class="card-img-top" src="./assets/param.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <h4 class="card-title"><strong>PARAM MITTAL</strong></h4>
+            <hr>
+            <p class="card-text">UI/UX Developer</p>
+          </div>
+        </div>
+         </a>
+        </div>
+
+        <div class="col-6 col-md-2 col-sm-6">
+          <div class="card ">
+          <img class="card-img-top" src="./assets/meghna.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <h4 class="card-title"><strong>MEGHNA GUPTA</strong></h4>
             <hr>
             <p class="card-text">UI/UX Developer</p>
           </div>
         </div>
         </div>
 
-        <div class="col">
+        <div class="col-6 col-md-2 col-sm-6">
+        <a href="https://www.facebook.com/suyash.srivastava.359" target="_blank" style="cursor: default;">
           <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./assets/suyash.jpg" alt="Card image cap">
           <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
+            <h4 class="card-title"><strong >SUYASH SRIVASTAVA</strong></h4>
             <hr>
-            <p class="card-text">UI/UX Developer</p>
+            <p class="card-text"> Developer</p>
           </div>
         </div>
-        </div>
-
-        <div class="col">
-          <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
-          <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
-            <hr>
-            <p class="card-text">UI/UX Developer</p>
-          </div>
-        </div>
-        </div>
-
-        <div class="col">
-          <div class="card ">
-          <img class="card-img-top" src="./assets/team.jpg" alt="Card image cap">
-          <div class="card-img-overlay">
-            <h4 class="card-title"><strong>AYUSH SINGH</strong></h4>
-            <hr>
-            <p class="card-text">UI/UX Developer</p>
-          </div>
-        </div>
+        </a>
         </div>
 
   </div>  
@@ -519,8 +528,8 @@
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerPadding: '10px',
+        slidesToShow: 1
       }
     },
     {
@@ -528,7 +537,7 @@
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 1
       }
     }
@@ -668,5 +677,6 @@ $(".section-scroll").sectionScroller({
     })
 
 </script>
+
 </body>
 </html>

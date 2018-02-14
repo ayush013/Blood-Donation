@@ -8,18 +8,18 @@
 		$email = $_POST['email'];
 		$contact = $_POST['contact'];
 		$year = $_POST['year'];
-		$branch = $_POST['branch'];
+		//$branch = $_POST['branch'];
 		$course = $_POST['course'];
 		$gender = $_POST['gender'];
 		$hostler = $_POST['hostler'];
 		$bloodgroup = $_POST['bloodgroup'];
-
+		$error['name']='';$error['email']='';$error['student_no']='';$error['contact']='';
 		
 		if(empty($name))
 		{
 			$error['name'] = 'Name cannot be empty';
 		}
-		else if(!preg_match('/^[A-z ]+$/', $name))
+		else if(!preg_match('/^[a-zA-Z]+[\s]{0,1}[a-zA-Z]+[\s]{0,1}[A-z]+/', $name))
 		{
 			$error['name'] = 'Invalid name';
 		}
@@ -28,7 +28,7 @@
 		{
 			$error['student_no'] = 'Student number cannot be empty';
 		}
-		else if(!preg_match('/(^[1][3-7][0-9]{5})/', $student_no))/* regex for student number */
+		else if(!preg_match('/^([1][4-7]\d{5}[Dd]{0,1})$/', $student_no))/* regex for student number */
 		{
 			$error['student_no'] = 'Invalid student number';
 		}
@@ -75,7 +75,7 @@
 		if($contactcount > 0)
 			$error['contact'] = 'Contact number already exists';
 
-		if(isset($error['email']) || isset($error['name']) || isset($error['contact']) || isset($error['student_no']))
+		if(!empty($error['email']) || !empty($error['name']) || !empty($error['contact']) || !empty($error['student_no']))
 		{
 			$error['status'] = 1;
 		}
@@ -86,13 +86,13 @@
 			{
 
 
-			    $stmt = $pdo->prepare("INSERT INTO users (name, email, contact, year, branch, course, blood_group, hostler, gender,student_no) VALUES (:name,:email,:contact,:year,:branch,:course,:blood_group,:hostler,:gender,:student_no)");
+			    $stmt = $pdo->prepare("INSERT INTO users (name, email, contact, year, course, blood_group, hostler, gender,student_no) VALUES (:name,:email,:contact,:year,:course,:blood_group,:hostler,:gender,:student_no)");
 	             
 	           $stmt->bindparam(":name", $name);
 	           $stmt->bindparam(":contact", $contact);
 	           $stmt->bindparam(":email", $email);
 	           $stmt->bindparam(":year", $year);   
-	           $stmt->bindparam(":branch", $branch);
+	          // $stmt->bindparam(":branch", $branch);
 	           $stmt->bindparam(":course",$course);
 	           $stmt->bindparam(":blood_group", $bloodgroup);
 	           $stmt->bindparam(":hostler",$hostler);
@@ -105,20 +105,7 @@
 	           		$message = file_get_contents('mail_templates/bdc.html');//replace the mail template
 	          		$message = str_replace('%name%', $name, $message); //for sending email purpose
 	          		$subject="Welcome";
-	          	    send_mail($email,$subject,$message);
-	          		// if($bool == true)
-	          		// {
-	          		// 	 $stmt = $pdo->prepare("INSERT INTO users (bool) VALUES (:bool)");
-	          		// 	 $stmt->bindparam(":bool",'Y');
-	          		// 	 $stmt->execute();
-	          		// }
-	          		// else
-	          		// {
-	          		// 	$stmt = $pdo->prepare("INSERT INTO users (bool) VALUES (:bool)");
-	          		// 	$stmt->bindparam(":bool",'N');
-	          		// 	$stmt->execute();
-
-	          		// }
+	          		send_mail($email,$subject,$message);
             	}  
 
 	           

@@ -22,6 +22,10 @@ body {
 	padding: 5vh 8vw;
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
 	padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .navbar-brand:hover hr {
@@ -57,6 +61,7 @@ body {
 
 
 #landingquotes {
+	min-height: 5vh;
     text-align: center;
     font-size: 1.2rem;
 	display: block;
@@ -160,6 +165,7 @@ body::-webkit-scrollbar-thumb {
 	cursor: default;
 	margin: 0;
 	text-align: center;
+    font-size: 1.2rem;
 }
 
 .team {
@@ -359,14 +365,14 @@ input[type="radio"]:checked + .form-check-label span {
     font-size: 0.75em;
 }
 .swal-icon--success__line{
-    background-color: #af0e20;
+    background-color: white;
 }
 .swal-button{
     background-color: #af0e20;
 }
 
 #sdc {
-	position: absolute;
+	position: fixed;
 	bottom: 8vh;
 	left: 5vw;
 	z-index: 1000;
@@ -388,17 +394,23 @@ input[type="radio"]:checked + .form-check-label span {
 }
 
 #donate {
+    text-align:center;
+    width:17vw;
     z-index: 1000;
     position: absolute;
     text-transform: uppercase;
     border: 2px solid white;
-    padding: 2vh 4vw;
+    padding: 2vh 0;
     color: white;
     font-weight: bold;
-    margin: 0 31vw;
+    /*margin: 0 31vw;*/
     font-size: 1.2rem;
     border-radius: 13px;
     bottom: 17vh;
+    left:0;
+    right:0;
+    margin:0 auto;
+
 }
 
 #donate:after{
@@ -420,4 +432,157 @@ input[type="radio"]:checked + .form-check-label span {
 
 #donate:hover:after{
     width: 100%;
+}
+.swal-overlay--show-modal .swal-modal, .swal-icon--success:after, .swal-icon--success:before, .swal-icon--success__hide-corners{
+background-color: black;
+}
+.swal-text, .swal-title{
+    color:white;
+}
+.swal-button:active {
+    background-color: #9d0000;
+}
+.swal-icon--success__ring {
+    border: 4px solid hsla(0, 0%, 100%, 0.2);
+}
+.swal-overlay--show-modal .swal-modal {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+@media (max-width:992px) {
+  #svgoverlay{
+    display: none;
+  }
+  #landingtitle{
+    font-size: 2.5rem;
+  }
+  .tab-content{
+    padding:5vh 3vw;
+  }
+  .container{
+    padding:5vh 0;
+  }
+  .nav-link {
+    padding: 1.5rem 2rem;
+}
+.card-title{
+    font-size:0.75rem;
+    }
+    .card-text{
+        font-size: 0.6rem;
+    }
+    .gallery {
+    min-height: 55vh;
+}
+.team {
+    min-height: 90vh;
+}
+
+#donate {
+    text-align:center;
+    position: relative;
+    padding: 2vh 0;
+    margin:0 auto;
+    bottom: auto;
+    display: block;
+}
+
+body {
+	position: relative;
+}
+
+#sdc {
+	position: absolute;
+}
+
+.typesection {
+    padding: 10vh 0 0 0;
+}
+
+}
+@media (max-width:843px){
+    .navbar{
+
+    justify-content: center!important;
+    }
+    a.navbar-brand.ml-auto{
+        display: none;
+    }
+}
+@media (max-width: 767px){ 
+.nav-link {
+    padding: 1.5rem 1rem;
+}
+#donate {
+    border:1px solid white;
+}
+#sdc {
+	bottom: 1vh;
+}
+
+.register {
+	padding: 5vh 5vw 10vh 5vw;
+}
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 5vh 5vw;
+	}
+	#donate {
+		width: 23vw;
+	}
+	#landingtitle {
+		padding-top: 27vh;
+	}
+	.register {
+	padding: 5vh 5vw 10vh 5vw;
+}
+}
+
+
+@media (max-width: 550px) {
+.nav-link {
+    padding: 1.5rem 0.5rem;
+}
+
+#donate {
+	width: 28vw;
+}
+	#landingtitle {
+		padding-top: 24vh;
+	}
+
+}
+
+@media (max-width: 576px) {
+div.col-12.col-sm-4 img {
+	width: 60vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.typesection {
+    padding: 5vh 0 0 0;
+}
+}
+
+@media (max-width: 460px) {
+.nav-link {
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width: 460px) {
+.navbar-brand {
+    font-size: 0.8rem;
+}
+#donate {
+	width: 33vw;
+}
+}
+
+@media (max-width: 380px) {
+.nav-link {
+    padding: 1.5rem 0.2rem;
+}
 }
